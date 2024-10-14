@@ -10,15 +10,6 @@ body {
     background-color: #010b28;
     color: #032363;
 }
-#eth{
-    position: absolute;
-    height: 630px;
-    width: 350px;
-    margin: 50px ;
-    opacity: 0.25;
-    top: -20px;
-    left: 350px;
-}
 nav img{
     height: 50px;
     width: 30px;
@@ -37,6 +28,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -309,8 +301,60 @@ div #git:hover {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+    body {
+    padding: 10px;
+    font-size: small;
+    }
+    nav img{
+    height: 30px;
+    width: 15px;
+    position: absolute;
+    margin-left: 185px;
+    
+ }
+ header nav li {
+     display: none;
+
+ }
+
+     header nav {
+        width: 100%;
+        flex-direction: column; /* Stack items in header */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    
+
+        .container {
+            background-color: #001246;
+            border-radius: 8px;
+            box-shadow: 0px 0px 50px #00030b;
+            padding: 20px;
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+            margin: 20px auto;
+            font-size: smaller;
+        }
+    h2 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif;
+    }
+
+    input {
+        width: calc(100% - 40px); /* Full-width input */
+    }
+
+    button {
+        margin: 10px 0; /* Adjust button margin */
+    }
     .footer-links li {
         display: block;
         margin: 10px 0;
+    }
+    .info {
+        padding: 10px; /* Adjust padding */
     }
 }
